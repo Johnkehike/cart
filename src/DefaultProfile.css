@@ -1,0 +1,45 @@
+
+
+.home-main{
+    width: 100%;
+    padding: 0 12rem;
+    height: auto;
+    display: flex
+;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+.descr{
+    width: 50%;
+    height: auto;
+    display: flex
+;
+    flex-direction: column;
+    row-gap: 0.4rem;
+}
+.descr h2{
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 70%;
+    line-height: 3.3rem;
+}
+.descr a button{
+    color: white;
+    background-color: #3A7563;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+.home-img{
+    width: 50%;
+    height: 100%;
+}
+.home-img img{
+    width: 100%;
+    height: 100%;
+}

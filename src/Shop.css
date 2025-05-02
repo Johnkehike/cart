@@ -1,0 +1,129 @@
+
+
+.shop{
+    width: 100%;
+    height: auto;
+    /* padding: 0 3rem; */
+    display: flex
+;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    align-items: center;
+    padding: 2rem 12rem 5rem 12rem;
+}
+.shop-title{}
+.shop-title h1{
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+.product-cont{
+    /* width: 100%;
+    height: auto;
+    display: flex
+;
+    flex-wrap: wrap; */
+    width: 100%;
+    height: auto;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(256px, 256px)); */
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    /* column-gap: 10rem; */
+    column-gap: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+.each-product{
+    /* flex-basis: calc(100% / 3); */
+
+    /* display: flex
+    ;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green; */
+    border: 2px solid #3A7563;
+    /* flex-basis: calc(100% / 3); */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out;
+    row-gap: 1rem;
+}
+
+
+.each-product:hover{
+    transform: scale(1.05);
+}
+.top-prod{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+.img-cont{
+    width: 15rem;
+    height: 14rem;
+}
+.img-cont img{
+    width: 100%;
+    height: 100%;
+}
+.prod-descr{}
+.prod-descr p{}
+.bottom-prod{
+    width: 100%;
+    height: auto;
+    display: flex
+;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.price-prod{
+    display: flex
+    ;
+    justify-content: space-between;
+}
+.rating{
+    display: flex
+    ;
+    column-gap: 0.2rem;
+    align-items: center;
+    column-gap: 0.3rem;
+}
+.rating h4{}
+.pricing{}
+.pricing h4{}
+.button-prod{
+    display: flex
+    ;
+    justify-content: space-between;
+}
+.cart-btn{
+    text-decoration: none;
+    background: #3A7563;
+    display: flex
+;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+    color: #FFFFFF;
+    border: 2px solid #3A7563;
+}
+
+
+.quantity-btn{
+    width: 3rem;
+    padding: 0.3rem 0.2rem;
+    border: 2px solid #3A7563;
+    border-radius: 0.4rem;
+}
+.quantity-btn::-webkit-inner-spin-button, .quantity-btn::-webkit-outer-spin-button{
+    opacity: 1 !important;
+}

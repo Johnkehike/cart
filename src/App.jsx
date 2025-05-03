@@ -18,12 +18,14 @@ import { useEffect } from 'react';
 import CartReady from './cartReady';
 import { FaHome, FaUser } from "react-icons/fa";
 import { HiShoppingBag } from "react-icons/hi2";
+import { IoIosMenu, IoMdClose } from "react-icons/io";
 
 
 function App() {
   const { name } = useParams();
   const [products, setProducts] = useState([]);
   const [selected, setSelected] = useState(1);
+  const [openNav, setOpenNav] = useState(false);
   
 
   //'https://fakestoreapi.com/products'
@@ -44,9 +46,56 @@ function App() {
     <CartProvider>
       <div className="main">
         <nav>
-          <div className="logo">
+          <div className={openNav ? 'no-logo' : 'logo'}>
             <h1>LuxeCart</h1>
             <FontAwesomeIcon icon={faCircle} /> 
+          </div>
+          <div className={openNav ? 'no-menu' : 'menu'} onClick={() => setOpenNav(true)}>
+            <IoIosMenu />
+          </div>
+          <div className={openNav ? 'nav-items-mobile' : 'no-nav-items-mobile'}>
+              <div className={selected === 1 ? `home-new` : `home`}>
+                
+                <Link onClick={() => setSelected(1)} to="/"><FaHome /> Home</Link>
+              </div>
+              <div className={selected === 2 ? `shop-btn-new` : `shop-btn`}>
+                
+                <Link onClick={() => setSelected(2)} to="/shop" ><HiShoppingBag /> Shop</Link>
+              </div>
+              <div className={selected === 3 ? `about-new` : `about`}>
+                
+                <Link onClick={() => setSelected(3)} to="/aboutus"><FaUser /> About</Link>
+              </div>
+
+              {/* <div className={openNav ? 'cart-bag' : 'no-cart-bag'}> */}
+                
+                  {
+                    openNav ? 
+                      (<Link className={selected === 4 ? `cart-new` : `cart`} onClick={() => setSelected(4)} to="/cart" >
+                        <CartReady />
+                        <div className={selected === 4 ? `basket-new` : `basket`}>
+                        <FontAwesomeIcon icon={faCartShopping} />
+                        </div>
+                    </Link>) : 
+                    (
+                      <Link className="carrt">
+                      
+                      <div className="baskett">
+                      
+                      </div>
+                  </Link>
+                    )
+
+                  }
+                    
+                  
+              
+
+
+              <div className="close-btn" onClick={() => setOpenNav(false)}>
+                <IoMdClose />
+              </div>
+              
           </div>
           <div className="nav-buttons">
             <div className={selected === 1 ? `home-new` : `home`}>
@@ -62,7 +111,7 @@ function App() {
               <Link onClick={() => setSelected(3)} to="/aboutus"><FaUser /> About</Link>
             </div>
           </div>
-          <Link className={selected === 4 ? `cart-new` : `cart`} onClick={() => setSelected(4)} to="/cart" handleFourClick={handleFourClick}>
+          <Link className={selected === 4 ? `cart-new` : `cart`} onClick={() => setSelected(4)} to="/cart" >
             <CartReady />
             <div className={selected === 4 ? `basket-new` : `basket`}>
               <FontAwesomeIcon icon={faCartShopping} />

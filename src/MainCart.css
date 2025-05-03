@@ -1,5 +1,9 @@
 
 
+.cart-page-container{
+    width: 100%;
+    padding: 2rem 0rem;
+}
 .cart-main{
     width: 100%;
     height: auto;
@@ -7,7 +11,7 @@
     justify-content: space-between;
     /* align-items: center; */
     /* padding: 4rem 12rem; */
-    padding: 4rem 12rem 0rem 12rem;
+    padding: 4rem 8rem 0rem 8rem;
 }
 .cart-side{
     width: 100%;
@@ -29,6 +33,7 @@
 }
 .each-cart{
     width: 70%;
+    min-width: 25rem;
     height: auto;
     display: flex
 ;
@@ -194,4 +199,28 @@
     padding: 6rem 2rem 0 2rem;
     align-items: center;
     justify-content: center;
+}
+
+
+@media (max-width:480px) {
+    .cart-main{
+    padding: 2rem 2rem 0rem 2rem;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    }
+    .each-cart{
+        flex-direction: column;
+        min-width: unset;
+        width: 100%;
+    }
+    .bill-side{
+        padding: unset;
+    }
+    .photo-cont{
+        width: 100%;
+        height: fit-content;
+    }
+    .cart-page-container{
+        padding: 0rem 0rem 2rem 0;
+    }
 }

@@ -17,8 +17,7 @@ nav{
   padding: 2rem 8rem;
 }
 .logo{
-  display: flex
-;
+  display: flex;
   align-items: center;
   column-gap: 0.3rem;
 }
@@ -34,6 +33,24 @@ nav{
   flex-direction: row;
   column-gap: 3rem;
   align-items: center;
+}
+.nav-items-mobile{
+  display: none;
+}
+.no-nav-items-mobile{
+  display: none;
+}
+.menu{
+  display: none;
+}
+.no-menu{
+  display: none;
+}
+.cart-bag{
+  display: none;
+}
+.no-cart-bag{
+  display: none;
 }
 .home{}
 .home a{
@@ -147,10 +164,15 @@ nav{
 } */
 .notify-icon{
   font-size: 0.5rem;
+  display: flex
+  ;
+  justify-content: center;
+  align-items: center;
 }
 .notify-icon svg{
   color: #3A7563;
   font-size: 0.8rem;
+  position: absolute;
 }
 .notify-icon svg{}
 .basket{}
@@ -161,4 +183,123 @@ nav{
 .basket-new svg{
   color: black;
   font-size: 1.5rem;
+}
+.carrt{
+  display: none;
+}
+.carrt-new{
+  display: none;
+}
+.baskett{
+  display: none;
+}
+.baskett-new{
+  display: none;
+}
+.nav-items-mobile .cart{
+  display: none;
+}
+.nav-items-mobile .cart-new{
+  display: none;
+}
+@media (max-width: 480px) {
+  .nav-buttons{
+    display: none;
+  }
+  .cart-bag{
+    display: none;
+  }
+  .no-cart-bag{
+    display: none;
+  }
+  nav .cart{
+    display: none;
+  }
+  nav .cart-new{
+    display: none;
+  }
+  .nav-items-mobile .cart{
+
+  }
+  .nav-items-mobile .cart{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: none;
+    padding: 0.3rem 0.4rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  .nav-items-mobile .cart-new{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #DEECE3;
+    padding: 0.3rem 0.4rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+
+  .carrt{
+    display: none;
+  }
+  .carrt-new{
+    display: none;
+  }
+  .baskett{
+    display: none;
+  }
+  .baskett-new{
+    display: none;
+  }
+  .nav-items-mobile{
+    /* position: absolute; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* top: 6rem; */
+
+  }
+  .no-nav-items-mobile{
+    display: none;
+  }
+  nav{
+    padding: 4rem 2rem;
+    align-items: center;
+    height: 10rem;
+  }
+  .menu svg{
+    font-size: 1.9rem;
+    cursor: pointer;
+    
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+  }
+  .menu{
+    display: unset;
+  }
+
+  .no-menu{
+    display: none;
+  }
+
+  .no-logo{
+    display: none;
+  }
+
+  .close-btn{
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+  }
+  .close-btn svg{
+    font-size: 2rem;
+  }
+  
 }

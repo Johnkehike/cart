@@ -8,17 +8,21 @@
     display: flex;
     justify-content: space-around;
     background: #DEECE3;
-    padding: 5rem 0rem;
+    padding: 5rem 2rem;
     z-index: 100;
     align-items: center;
     transform: translateY(100%);
     transition: transform 0.3s ease-in-out;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 .footer.is-visible {
     transform: translateY(0);
   }
 
 .company{
+    min-width: 162.25px;
+    flex: 1;
     display: flex
     ;
     flex-direction: column;
@@ -27,6 +31,8 @@
 .title{}
 .title h4{}
 .follow{
+    min-width: 162.25px;
+    flex: 1;
     display: flex
     ;
     flex-direction: column;
@@ -44,3 +50,11 @@
 }
 .social-icon{}
 .social-icon svg{}
+
+
+@media (max-width: 734px) {
+    .follow{
+        width: calc(100% / 4);
+        min-width: 162.25px;
+    }
+}

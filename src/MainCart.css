@@ -245,4 +245,11 @@
     .cart-page-container{
         padding: 0rem 0rem 2rem 0;
     }
+    .input{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .input button{
+        width: 100%;
+    }
 }

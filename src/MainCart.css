@@ -252,4 +252,7 @@
     .input button{
         width: 100%;
     }
+    .input input{
+        width: 100%;
+    }
 }

@@ -35,7 +35,7 @@
 }
 .cart-title{}
 .cart-title h3{}
-.cart-title p a{
+.cart-side p a{
     color: #3A7563;
 }
 .cart-cont{
@@ -219,7 +219,10 @@
     align-items: center;
     justify-content: center;
 }
-
+.thank-you-message h1{
+    font-size: 3.5rem;
+    color: #3A7563;
+}
 
 @media (max-width:480px) {
     .cart-main{

@@ -140,7 +140,7 @@
 
 .quantity-btn{
     width: 3rem;
-    padding: 0.3rem 0.2rem;
+    padding: 0.3rem 0.5rem;
     border: 2px solid #3A7563;
     border-radius: 0.4rem;
 }
@@ -163,6 +163,9 @@
 @media (max-width: 590px) {
     .product-cont{
         grid-template-columns: unset;
+    }
+    .shop{
+        padding: 2rem 2rem 5rem 2rem;
     }
 }
 @media (max-width: 480px) {

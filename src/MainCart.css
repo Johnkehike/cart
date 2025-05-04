@@ -35,6 +35,9 @@
 }
 .cart-title{}
 .cart-title h3{}
+.cart-title p a{
+    color: #3A7563;
+}
 .cart-cont{
     width: 100%;
     height: auto;
@@ -83,12 +86,15 @@
     row-gap: 0.5rem;
 }
 .plus-minus{
+    width: 100%;
     display: flex
     ;
     column-gap: 0.5rem;
+    align-items: center;
 }
 .plus-minus button{
-    padding: 0.2rem 0.5rem;
+    width: 100%;
+    padding: 0.3rem 1rem;
     outline: none;
     background: none;
     border: none;
@@ -98,12 +104,13 @@
 }
 .remove-button{}
 .remove-button button{
+    width: 100%;
     outline: none;
     border: none;
     background: none;
     background: #3A7563;
     color: white;
-    padding: 0.3rem 0.5rem;
+    padding: 0.3rem 1rem;
     border-radius: 0.3rem;
 }
 

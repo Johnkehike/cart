@@ -147,7 +147,7 @@ function Cart({handleFourClick}){
         <div className="cart-page-container"> 
             {showThankYou ? (
                 <div className="thank-you-message" >
-                    <h2>Thanks for Shopping with us!</h2>
+                    <h1>Thanks for Shopping with us!</h1>
                 </div>
             ) : (
               
